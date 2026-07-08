@@ -12,7 +12,7 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Markup;
 using System.Windows.Media;
-using iNKORE.UI.WPF.Modern;
+using ModernWpf;
 
 namespace WPFCustomMessageBox;
 

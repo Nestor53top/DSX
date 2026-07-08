@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Markup;
-using iNKORE.UI.WPF.Modern.Controls;
+using ModernWpf.Controls;
 
 namespace DualSenseX;
 
