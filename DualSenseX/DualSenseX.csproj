@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="HidSharp" Version="2.6.4" />
-    <PackageReference Include="WindowsInput" Version="6.0.0" />
+    <PackageReference Include="InputSimulatorStandard" Version="1.0.0" />
     <PackageReference Include="NAudio" Version="2.2.1" />
     <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

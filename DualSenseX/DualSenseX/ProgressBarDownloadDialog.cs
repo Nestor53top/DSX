@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Markup;
 using Inkore.UI.WPF.Modern.Controls;
+using ProgressBar = System.Windows.Controls.ProgressBar;
 
 namespace DualSenseX;
 

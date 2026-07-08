@@ -2,7 +2,7 @@ using System;
 using System.Windows.Media;
 using ExtendInput.DataTools.DualSense;
 using HidSharp;
-using WindowsInput;
+using InputSimulatorStandard;
 
 namespace DualSenseX;
 

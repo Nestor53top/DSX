@@ -40,13 +40,15 @@ using Microsoft.AppCenter.Analytics;
 using Microsoft.Win32;
 using Inkore.UI.WPF.Modern;
 using Inkore.UI.WPF.Modern.Controls;
+using ProgressBar = System.Windows.Controls.ProgressBar;
+using ListView = System.Windows.Controls.ListView;
 using NAudio.CoreAudioApi;
 using NAudio.CoreAudioApi.Interfaces;
 using NAudio.Wave;
 using Squirrel;
 using WPFCustomMessageBox;
-using WindowsInput;
-using WindowsInput.Native;
+using InputSimulatorStandard;
+using InputSimulatorStandard.Native;
 
 namespace DualSenseX;
 
