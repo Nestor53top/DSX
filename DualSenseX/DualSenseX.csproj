@@ -49,12 +49,8 @@
     <EmbeddedResource Include="dualsensex_icon.png" />
   </ItemGroup>
 
-  <PropertyGroup>
-    <EnableDefaultPageItems>false</EnableDefaultPageItems>
-  </PropertyGroup>
-
   <ItemGroup>
-    <Page Include="**\*.xaml" />
+    <None Include="**\*.xaml" />
   </ItemGroup>
 
 </Project>
