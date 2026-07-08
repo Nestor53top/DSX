@@ -17,12 +17,12 @@
 
   <ItemGroup>
     <PackageReference Include="iNKORE.UI.WPF.Modern" Version="0.9.14.1" />
-    <PackageReference Include="HidSharp" Version="2.10.1" />
+    <PackageReference Include="HidSharp" Version="2.6.4" />
     <PackageReference Include="WindowsInput" Version="6.4.1" />
     <PackageReference Include="NAudio" Version="2.2.1" />
     <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="Nefarius.ViGEm.Client" Version="1.18.4" />
+    <PackageReference Include="Nefarius.ViGEm.Client" Version="1.19.197" />
     <PackageReference Include="Microsoft.AppCenter" Version="5.0.5" />
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.5" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.5" />
