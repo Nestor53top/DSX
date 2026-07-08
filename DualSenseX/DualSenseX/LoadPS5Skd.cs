@@ -12,7 +12,7 @@ using System.Windows.Threading;
 using EasyLocalization.Localization;
 using HidSharp;
 using Microsoft.Win32;
-using ModernWpf.Controls;
+using iNKORE.UI.WPF.Modern.Controls;
 using WPFCustomMessageBox;
 
 namespace DualSenseX;

@@ -11,10 +11,8 @@ using Microsoft.AppCenter.Crashes;
 
 namespace DualSenseX;
 
-public class App : Application
+public partial class App : Application
 {
-	private bool _contentLoaded;
-
 	private void Application_Startup(object sender, StartupEventArgs e)
 	{
 		AppCenter.SetCountryCode(RegionInfo.CurrentRegion.TwoLetterISORegionName);
@@ -27,34 +25,5 @@ public class App : Application
 		{
 			((UIElement)main.App_TaskBarIcon).Visibility = (Visibility)1;
 		}
-	}
-
-	[DebuggerNonUserCode]
-	[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-	public void InitializeComponent()
-	{
-		//IL_0018: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0022: Expected O, but got Unknown
-		//IL_002a: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0034: Expected O, but got Unknown
-		if (!_contentLoaded)
-		{
-			_contentLoaded = true;
-			((Application)this).Startup += new StartupEventHandler(Application_Startup);
-			((Application)this).Exit += new ExitEventHandler(Application_Exit);
-			((Application)this).StartupUri = new Uri("Main.xaml", UriKind.Relative);
-			Uri uri = new Uri("/DualSenseX;component/app.xaml", UriKind.Relative);
-			Application.LoadComponent((object)this, uri);
-		}
-	}
-
-	[STAThread]
-	[DebuggerNonUserCode]
-	[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-	public static void Main()
-	{
-		App app = new App();
-		app.InitializeComponent();
-		((Application)app).Run();
 	}
 }

@@ -16,7 +16,7 @@ using System.Windows.Resources;
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: ComVisible(false)]
-[assembly: ThemeInfo(/*Could not decode attribute arguments.*/)]
+[assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)]
 [assembly: AssemblyFileVersion("1.4.9")]
 [assembly: AssemblyAssociatedContentFile("dualsensex-fb.json")]
 [assembly: AssemblyAssociatedContentFile("main.ico")]

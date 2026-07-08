@@ -12,7 +12,7 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Markup;
 using System.Windows.Media;
-using ModernWpf;
+using iNKORE.UI.WPF.Modern;
 
 namespace WPFCustomMessageBox;
 
@@ -56,7 +56,7 @@ internal class CustomMessageBoxWindow : Window, IComponentConnector
 
 	internal Border borderBackground;
 
-	internal Image Image_MessageBox;
+	internal System.Windows.Controls.Image Image_MessageBox;
 
 	internal TextBlock TextBlock_Message;
 
