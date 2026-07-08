@@ -49,10 +49,12 @@
     <EmbeddedResource Include="dualsensex_icon.png" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+  </PropertyGroup>
+
   <ItemGroup>
-    <None Remove="*.xaml" />
-    <Page Include="*.xaml" />
-    <Page Include="message-20box\*.xaml" />
+    <Page Include="**\*.xaml" />
   </ItemGroup>
 
 </Project>
