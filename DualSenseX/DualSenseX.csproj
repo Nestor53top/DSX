@@ -15,18 +15,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="iNKORE.UI.WPF.Modern" Version="0.9.14.1" />
-    <PackageReference Include="HidSharp" Version="2.6.4" />
-    <PackageReference Include="WindowsInput" Version="6.4.1" />
-    <PackageReference Include="NAudio" Version="2.2.1" />
-    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="Nefarius.ViGEm.Client" Version="1.19.197" />
-    <PackageReference Include="Microsoft.AppCenter" Version="5.0.5" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.5" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.5" />
-    <PackageReference Include="Squirrel" Version="1.1.0.6" />
-    <PackageReference Include="WPFCustomMessageBox" Version="1.0.7" />
+    <ProjectReference Include="..\ModernWpf\ModernWpf.csproj" />
+    <ProjectReference Include="..\ModernWpf.Controls\ModernWpf.Controls.csproj" />
+    <ProjectReference Include="..\HidSharp\HidSharp.csproj" />
+    <ProjectReference Include="..\Nefarius.ViGEm.Client\Nefarius.ViGEm.Client.csproj" />
+    <ProjectReference Include="..\WindowsInput\WindowsInput.csproj" />
+    <ProjectReference Include="..\NAudio\NAudio.csproj" />
+    <ProjectReference Include="..\Newtonsoft.Json\Newtonsoft.Json.csproj" />
+    <ProjectReference Include="..\Hardcodet.NotifyIcon.Wpf\Hardcodet.NotifyIcon.Wpf.csproj" />
+    <ProjectReference Include="..\Microsoft.AppCenter\Microsoft.AppCenter.csproj" />
+    <ProjectReference Include="..\Microsoft.AppCenter.Analytics\Microsoft.AppCenter.Analytics.csproj" />
+    <ProjectReference Include="..\Microsoft.AppCenter.Crashes\Microsoft.AppCenter.Crashes.csproj" />
+    <ProjectReference Include="..\Squirrel\Squirrel.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +47,10 @@
     <EmbeddedResource Include="resources\**\*" />
     <EmbeddedResource Include="dualsensex_icon.png" />
   </ItemGroup>
+
+  <PropertyGroup>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+  </PropertyGroup>
 
   <ItemGroup>
     <None Include="**\*.xaml" />
