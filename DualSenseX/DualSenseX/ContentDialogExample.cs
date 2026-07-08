@@ -6,7 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Markup;
 using System.Windows.Shapes;
-using iNKORE.UI.WPF.Modern.Controls;
+using Inkore.UI.WPF.Modern.Controls;
 
 namespace DualSenseX;
 
