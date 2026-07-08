@@ -6,8 +6,8 @@
         xmlns:localization="clr-namespace:EasyLocalization.Localization"
         xmlns:tb="http://www.hardcodet.net/taskbar"
         xmlns:xctk1="http://schemas.xceed.com/wpf/xaml/toolkit"
-        xmlns:ui="http://schemas.modernwpf.com/2019"
-        Name="myMainWindow" Title="DualSenseX" IsIconVisible="true"
+        
+        Name="myMainWindow" Title="DualSenseX"
         Height="1080" Width="1920" ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen" MinHeight="480" Icon="Assets/Main.ico">
     <Grid Name="MainGrid">
