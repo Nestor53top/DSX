@@ -15,54 +15,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DeltaCompressionDotNet\DeltaCompressionDotNet.csproj" />
-    <ProjectReference Include="..\DeltaCompressionDotNet.MsDelta\DeltaCompressionDotNet.MsDelta.csproj" />
-    <ProjectReference Include="..\DeltaCompressionDotNet.PatchApi\DeltaCompressionDotNet.PatchApi.csproj" />
-    <ProjectReference Include="..\Device.Net\Device.Net.csproj" />
-    <ProjectReference Include="..\DistributedLock.Core\DistributedLock.Core.csproj" />
-    <ProjectReference Include="..\Hardcodet.NotifyIcon.Wpf\Hardcodet.NotifyIcon.Wpf.csproj" />
-    <ProjectReference Include="..\Hid.Net\Hid.Net.csproj" />
-    <ProjectReference Include="..\HidSharp\HidSharp.csproj" />
-    <ProjectReference Include="..\Microsoft.AppCenter\Microsoft.AppCenter.csproj" />
-    <ProjectReference Include="..\Microsoft.AppCenter.Analytics\Microsoft.AppCenter.Analytics.csproj" />
-    <ProjectReference Include="..\Microsoft.AppCenter.Crashes\Microsoft.AppCenter.Crashes.csproj" />
-    <ProjectReference Include="..\Microsoft.Bcl.AsyncInterfaces\Microsoft.Bcl.AsyncInterfaces.csproj" />
-    <ProjectReference Include="..\Microsoft.Win32.Registry\Microsoft.Win32.Registry.csproj" />
     <ProjectReference Include="..\ModernWpf\ModernWpf.csproj" />
     <ProjectReference Include="..\ModernWpf.Controls\ModernWpf.Controls.csproj" />
-    <ProjectReference Include="..\Mono.Cecil\Mono.Cecil.csproj" />
-    <ProjectReference Include="..\Mono.Cecil.Mdb\Mono.Cecil.Mdb.csproj" />
-    <ProjectReference Include="..\Mono.Cecil.Pdb\Mono.Cecil.Pdb.csproj" />
-    <ProjectReference Include="..\Mono.Cecil.Rocks\Mono.Cecil.Rocks.csproj" />
-    <ProjectReference Include="..\NAudio\NAudio.csproj" />
-    <ProjectReference Include="..\NAudio.Asio\NAudio.Asio.csproj" />
-    <ProjectReference Include="..\NAudio.Core\NAudio.Core.csproj" />
-    <ProjectReference Include="..\NAudio.Midi\NAudio.Midi.csproj" />
-    <ProjectReference Include="..\NAudio.Wasapi\NAudio.Wasapi.csproj" />
-    <ProjectReference Include="..\NAudio.WinForms\NAudio.WinForms.csproj" />
-    <ProjectReference Include="..\NAudio.WinMM\NAudio.WinMM.csproj" />
-    <ProjectReference Include="..\NamedPipeWrapper\NamedPipeWrapper.csproj" />
-    <ProjectReference Include="..\Nefarius.ViGEm.Client\Nefarius.ViGEm.Client.csproj" />
-    <ProjectReference Include="..\Newtonsoft.Json\Newtonsoft.Json.csproj" />
-    <ProjectReference Include="..\NuGet.Squirrel\NuGet.Squirrel.csproj" />
-    <ProjectReference Include="..\Polly\Polly.csproj" />
-    <ProjectReference Include="..\SQLitePCLRaw.batteries_v2\SQLitePCLRaw.batteries_v2.csproj" />
-    <ProjectReference Include="..\SQLitePCLRaw.core\SQLitePCLRaw.core.csproj" />
-    <ProjectReference Include="..\SQLitePCLRaw.nativelibrary\SQLitePCLRaw.nativelibrary.csproj" />
-    <ProjectReference Include="..\SQLitePCLRaw.provider.dynamic_cdecl\SQLitePCLRaw.provider.dynamic_cdecl.csproj" />
-    <ProjectReference Include="..\SharpCompress\SharpCompress.csproj" />
-    <ProjectReference Include="..\Squirrel\Squirrel.csproj" />
-    <ProjectReference Include="..\System.Buffers\System.Buffers.csproj" />
-    <ProjectReference Include="..\System.Memory\System.Memory.csproj" />
-    <ProjectReference Include="..\System.Numerics.Vectors\System.Numerics.Vectors.csproj" />
-    <ProjectReference Include="..\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.csproj" />
-    <ProjectReference Include="..\System.Security.AccessControl\System.Security.AccessControl.csproj" />
-    <ProjectReference Include="..\System.Security.Principal.Windows\System.Security.Principal.Windows.csproj" />
-    <ProjectReference Include="..\System.Threading.Tasks.Extensions\System.Threading.Tasks.Extensions.csproj" />
-    <ProjectReference Include="..\System.ValueTuple\System.ValueTuple.csproj" />
-    <ProjectReference Include="..\Update\Update.csproj" />
-    <ProjectReference Include="..\Usb.Net\Usb.Net.csproj" />
-    <ProjectReference Include="..\WindowsInput\WindowsInput.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HidSharp" Version="2.6.4" />
+    <PackageReference Include="WindowsInput" Version="6.4.1" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Nefarius.ViGEm.Client" Version="1.19.197" />
+    <PackageReference Include="Microsoft.AppCenter" Version="5.0.5" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.5" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.5" />
+    <PackageReference Include="Squirrel" Version="1.1.0.6" />
+    <PackageReference Include="WPFCustomMessageBox" Version="1.0.7" />
   </ItemGroup>
 
   <ItemGroup>
