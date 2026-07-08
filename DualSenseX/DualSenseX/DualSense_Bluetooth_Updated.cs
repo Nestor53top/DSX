@@ -372,15 +372,15 @@ internal class DualSense_Bluetooth_Updated : DuelSense_Base_Updated
 		double num2 = Convert.ToDouble(GlobalVar.Savefile.SaveFile_TouchpadLEDBrightness) / 100.0;
 		if (GlobalVar.IsAppLaunched)
 		{
-			array[46] = Convert.ToByte((double)(int)((Color)(ref saveFile_TouchpadLEDColor)).R * num);
-			array[47] = Convert.ToByte((double)(int)((Color)(ref saveFile_TouchpadLEDColor)).G * num);
-			array[48] = Convert.ToByte((double)(int)((Color)(ref saveFile_TouchpadLEDColor)).B * num);
+			array[46] = Convert.ToByte((double)(int)saveFile_TouchpadLEDColor.R * num);
+			array[47] = Convert.ToByte((double)(int)saveFile_TouchpadLEDColor.G * num);
+			array[48] = Convert.ToByte((double)(int)saveFile_TouchpadLEDColor.B * num);
 		}
 		else if (GlobalVar.ControllerLostConnection)
 		{
-			array[46] = Convert.ToByte((double)(int)((Color)(ref saveFile_TouchpadLEDColor)).R * num);
-			array[47] = Convert.ToByte((double)(int)((Color)(ref saveFile_TouchpadLEDColor)).G * num);
-			array[48] = Convert.ToByte((double)(int)((Color)(ref saveFile_TouchpadLEDColor)).B * num);
+			array[46] = Convert.ToByte((double)(int)saveFile_TouchpadLEDColor.R * num);
+			array[47] = Convert.ToByte((double)(int)saveFile_TouchpadLEDColor.G * num);
+			array[48] = Convert.ToByte((double)(int)saveFile_TouchpadLEDColor.B * num);
 			array[43] = 2;
 			array[46] = Convert.ToByte((double)(int)LedColor_R * num2);
 			array[47] = Convert.ToByte((double)(int)LedColor_G * num2);

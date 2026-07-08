@@ -508,9 +508,9 @@ internal class DualSense_USB_Updated : DuelSense_Base_Updated
 		double num26 = Convert.ToDouble(GlobalVar.Savefile.SaveFile_TouchpadLEDBrightness) / 100.0;
 		if (GlobalVar.IsAppLaunched)
 		{
-			array[45] = Convert.ToByte((double)(int)((Color)(ref saveFile_TouchpadLEDColor)).R * num25);
-			array[46] = Convert.ToByte((double)(int)((Color)(ref saveFile_TouchpadLEDColor)).G * num25);
-			array[47] = Convert.ToByte((double)(int)((Color)(ref saveFile_TouchpadLEDColor)).B * num25);
+			array[45] = Convert.ToByte((double)(int)saveFile_TouchpadLEDColor.R * num25);
+			array[46] = Convert.ToByte((double)(int)saveFile_TouchpadLEDColor.G * num25);
+			array[47] = Convert.ToByte((double)(int)saveFile_TouchpadLEDColor.B * num25);
 		}
 		else
 		{
