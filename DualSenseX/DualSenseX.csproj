@@ -15,11 +15,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ModernWpf\ModernWpf.csproj" />
-    <ProjectReference Include="..\ModernWpf.Controls\ModernWpf.Controls.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="HidSharp" Version="2.6.4" />
     <PackageReference Include="WindowsInput" Version="6.4.1" />
     <PackageReference Include="NAudio" Version="2.2.1" />
@@ -31,6 +26,8 @@
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.5" />
     <PackageReference Include="Squirrel" Version="1.1.0.6" />
     <PackageReference Include="WPFCustomMessageBox" Version="1.0.7" />
+    <PackageReference Include="iNKORE.UI.WPF.Modern" Version="0.9.14.1" />
+    <PackageReference Include="iNKORE.UI.WPF.Modern.Controls" Version="0.9.14.1" />
   </ItemGroup>
 
   <ItemGroup>
