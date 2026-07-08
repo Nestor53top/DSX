@@ -4,11 +4,10 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net472</TargetFramework>
     <UseWPF>true</UseWPF>
-    <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>DualSenseX</AssemblyName>
     <RootNamespace>DualSenseX</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>12</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ApplicationIcon>app.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>

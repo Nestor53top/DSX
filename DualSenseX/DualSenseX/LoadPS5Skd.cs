@@ -8,7 +8,6 @@ using System.Net;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Forms;
 using System.Windows.Threading;
 using EasyLocalization.Localization;
 using HidSharp;
