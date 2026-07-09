@@ -42,6 +42,7 @@ using Inkore.UI.WPF.Modern;
 using Inkore.UI.WPF.Modern.Controls;
 using ProgressBar = System.Windows.Controls.ProgressBar;
 using ListView = System.Windows.Controls.ListView;
+using Path = System.IO.Path;
 using NAudio.CoreAudioApi;
 using NAudio.CoreAudioApi.Interfaces;
 using NAudio.Wave;
@@ -2177,7 +2178,6 @@ public class Main : Window, IComponentConnector
 											((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 										}
 										await Task.Delay(2000);
-										Application.Restart();
 										Environment.Exit(0);
 									}
 									break;
@@ -2207,7 +2207,6 @@ public class Main : Window, IComponentConnector
 											((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 										}
 										await Task.Delay(2000);
-										Application.Restart();
 										Environment.Exit(0);
 									}
 									break;
@@ -2568,7 +2567,7 @@ public class Main : Window, IComponentConnector
 		{
 			((Window)this).Hide();
 		}
-		((Window)this).OnStateChanged(e);
+		base.OnStateChanged(e);
 	}
 
 	private void window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -3400,7 +3399,6 @@ public class Main : Window, IComponentConnector
 							((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 						}
 						await Task.Delay(2000);
-						Application.Restart();
 						Environment.Exit(0);
 					}
 				}
@@ -3855,7 +3853,6 @@ public class Main : Window, IComponentConnector
 							((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 						}
 						await Task.Delay(2000);
-						Application.Restart();
 						Environment.Exit(0);
 					}
 				}
@@ -4507,7 +4504,7 @@ public class Main : Window, IComponentConnector
 		//IL_02ff: Expected O, but got Unknown
 		try
 		{
-			Color.FromArgb(byte.MaxValue, (byte)0, (byte)192, (byte)0);
+			Color _ = Color.FromArgb(byte.MaxValue, (byte)0, (byte)192, (byte)0);
 			((ContentControl)GlobalVar.splashScreen.ConnectionStatusLabel).Content = ((ContentControl)HomePage_ConnectionStatus_ConnectionLabel).Content;
 			((ContentControl)GlobalVar.splashScreen.StatusBatteryLevelIcon).Content = ((ContentControl)AppControllerStatusBatteryLevelIcon).Content;
 			((ContentControl)GlobalVar.splashScreen.StatusBatteryLevelLabel).Content = ((ContentControl)AppControllerStatusBatteryLevelLabel).Content;
@@ -8738,7 +8735,6 @@ public class Main : Window, IComponentConnector
 							((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 						}
 						await Task.Delay(2000);
-						Application.Restart();
 						Environment.Exit(0);
 					}
 					else if ((int)val == 2)
@@ -8804,7 +8800,6 @@ public class Main : Window, IComponentConnector
 							((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 						}
 						await Task.Delay(2000);
-						Application.Restart();
 						Environment.Exit(0);
 					}
 					else if ((int)val2 == 2)
@@ -8868,7 +8863,6 @@ public class Main : Window, IComponentConnector
 						((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 					}
 					await Task.Delay(2000);
-					Application.Restart();
 					Environment.Exit(0);
 				}
 				else if ((int)val3 == 2)
@@ -8941,7 +8935,6 @@ public class Main : Window, IComponentConnector
 							((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 						}
 						await Task.Delay(2000);
-						Application.Restart();
 						Environment.Exit(0);
 					}
 					else if ((int)val == 2)
@@ -8999,7 +8992,6 @@ public class Main : Window, IComponentConnector
 							((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 						}
 						await Task.Delay(2000);
-						Application.Restart();
 						Environment.Exit(0);
 					}
 					else if ((int)val2 == 2)
@@ -9055,7 +9047,6 @@ public class Main : Window, IComponentConnector
 						((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 					}
 					await Task.Delay(2000);
-					Application.Restart();
 					Environment.Exit(0);
 				}
 				else if ((int)val3 == 2)
@@ -17043,7 +17034,6 @@ public class Main : Window, IComponentConnector
 							((UIElement)App_TaskBarIcon).Visibility = (Visibility)1;
 						}
 						await Task.Delay(2000);
-						Application.Restart();
 						Environment.Exit(0);
 					}
 				}
@@ -20112,7 +20102,7 @@ public class Main : Window, IComponentConnector
 		Random random = new Random();
 		byte[] array = new byte[3];
 		random.NextBytes(array);
-		return Color.FromArgb(array[0], array[1], array[2]);
+		return Color.FromArgb(byte.MaxValue, array[0], array[1], array[2]);
 	}
 
 	private void AppNotificationButton2_Click(object sender, RoutedEventArgs e)

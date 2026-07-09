@@ -12,6 +12,9 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Markup;
 using System.Windows.Media;
+using Brush = System.Windows.Media.Brush;
+using Color = System.Windows.Media.Color;
+using Image = System.Windows.Controls.Image;
 using Inkore.UI.WPF.Modern;
 
 namespace WPFCustomMessageBox;
@@ -272,20 +275,17 @@ internal class CustomMessageBoxWindow : Window, IComponentConnector
 
 	private void DisplayButtons(MessageBoxButton button)
 	{
-		//IL_0000: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0002: Unknown result type (might be due to invalid IL or missing references)
-		//IL_0018: Expected I4, but got Unknown
-		switch (button - 1)
+		switch (button)
 		{
-		case 0:
+		case MessageBoxButton.OK:
 			((UIElement)Button_OK).Visibility = (Visibility)0;
 			((UIElement)Button_OK).Focus();
 			((UIElement)Button_Cancel).Visibility = (Visibility)0;
 			((UIElement)Button_Yes).Visibility = (Visibility)2;
 			((UIElement)Button_No).Visibility = (Visibility)2;
-			DisplayType = "OKCancel";
+			DisplayType = "OK";
 			break;
-		case 3:
+		case MessageBoxButton.YesNo:
 			((UIElement)Button_Yes).Visibility = (Visibility)0;
 			((UIElement)Button_Yes).Focus();
 			((UIElement)Button_No).Visibility = (Visibility)0;
@@ -293,7 +293,7 @@ internal class CustomMessageBoxWindow : Window, IComponentConnector
 			((UIElement)Button_Cancel).Visibility = (Visibility)2;
 			DisplayType = "YesNo";
 			break;
-		case 2:
+		case MessageBoxButton.YesNoCancel:
 			((UIElement)Button_Yes).Visibility = (Visibility)0;
 			((UIElement)Button_Yes).Focus();
 			((UIElement)Button_No).Visibility = (Visibility)0;

@@ -90,7 +90,6 @@ public class LoadPS5Skd
 							File.Delete("C:\\Temp\\DualSenseX\\ViGEmBusSetup_x64.msi");
 							if ((int)CustomMessageBox.ShowOK("ViGEm installation Requires a restart.", "DualSenseX", "Restart App", (MessageBoxImage)48) == 1)
 							{
-								Application.Restart();
 								Environment.Exit(0);
 							}
 							break;
@@ -115,7 +114,6 @@ public class LoadPS5Skd
 						File.Delete("C:\\Temp\\DualSenseX\\ViGEmBusSetup_x64.msi");
 						if ((int)CustomMessageBox.ShowOK("ViGEm installation Requires a restart.", "DualSenseX", "Restart App", (MessageBoxImage)48) == 1)
 						{
-							Application.Restart();
 							Environment.Exit(0);
 						}
 						break;
@@ -168,7 +166,6 @@ public class LoadPS5Skd
 							File.Delete("C:\\Temp\\DualSenseX\\ViGEmBusSetup_x64.msi");
 							if ((int)CustomMessageBox.ShowOK("ViGEm installation Requires a restart.", "DualSenseX", "Restart App", (MessageBoxImage)48) == 1)
 							{
-								Application.Restart();
 								Environment.Exit(0);
 							}
 							break;
@@ -193,7 +190,6 @@ public class LoadPS5Skd
 						File.Delete("C:\\Temp\\DualSenseX\\ViGEmBusSetup_x64.msi");
 						if ((int)CustomMessageBox.ShowOK("ViGEm installation Requires a restart.", "DualSenseX", "Restart App", (MessageBoxImage)48) == 1)
 						{
-							Application.Restart();
 							Environment.Exit(0);
 						}
 						break;
@@ -255,7 +251,6 @@ public class LoadPS5Skd
 						File.Delete("C:\\Temp\\DualSenseX\\ViGEmBusSetup_x64.msi");
 						if ((int)CustomMessageBox.ShowOK("ViGEm installation Requires a restart.", "DualSenseX", "Restart App", (MessageBoxImage)48) == 1)
 						{
-							Application.Restart();
 							Environment.Exit(0);
 						}
 						break;
@@ -280,7 +275,6 @@ public class LoadPS5Skd
 					File.Delete("C:\\Temp\\DualSenseX\\ViGEmBusSetup_x86.msi");
 					if ((int)CustomMessageBox.ShowOK("ViGEm installation Requires a restart.", "DualSenseX", "Restart App", (MessageBoxImage)48) == 1)
 					{
-						Application.Restart();
 						Environment.Exit(0);
 					}
 					break;
