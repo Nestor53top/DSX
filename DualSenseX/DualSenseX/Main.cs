@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 
 using System.Globalization;
 using System.IO;
@@ -46,7 +47,6 @@ using Path = System.IO.Path;
 using NAudio.CoreAudioApi;
 using NAudio.CoreAudioApi.Interfaces;
 using NAudio.Wave;
-using Squirrel;
 using WPFCustomMessageBox;
 using InputSimulatorStandard;
 using InputSimulatorStandard.Native;
@@ -3800,23 +3800,7 @@ public class Main : Window, IComponentConnector
 
 	private async Task CheckForUpdates()
 	{
-		if (Directory.Exists("C:\\Temp\\DualSenseX\\Releases"))
-		{
-			using (UpdateManager manager = new UpdateManager("C:\\Temp\\DualSenseX\\Releases"))
-			{
-				await manager.UpdateApp();
-			}
-			return;
-		}
-		try
-		{
-			CreateTempDirectories();
-			using UpdateManager manager = new UpdateManager("C:\\Temp\\DualSenseX\\Releases");
-			await manager.UpdateApp();
-		}
-		catch (IOException)
-		{
-		}
+		await Task.CompletedTask;
 	}
 
 	private void CreateTempDirectories()

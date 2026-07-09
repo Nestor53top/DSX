@@ -24,7 +24,6 @@
     <PackageReference Include="Microsoft.AppCenter" Version="5.0.5" />
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.5" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.5" />
-    <PackageReference Include="Squirrel" Version="1.1.0.6" />
     <PackageReference Include="WPFCustomMessageBox" Version="1.0.7" />
     <PackageReference Include="iNKORE.UI.WPF.Modern" Version="0.9.14.1" />
   </ItemGroup>
