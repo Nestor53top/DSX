@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 
 using System.Globalization;
 using System.IO;
@@ -2325,7 +2324,6 @@ public class Main : Window, IComponentConnector
 	{
 		//IL_0010: Unknown result type (might be due to invalid IL or missing references)
 		//IL_001c: Unknown result type (might be due to invalid IL or missing references)
-		new Icon(Application.GetResourceStream(MainIcon).Stream);
 		new BitmapImage(MainIcon);
 		string title = "WPF NotifyIcon";
 		string message = "This is a standard balloon";
@@ -3858,7 +3856,6 @@ public class Main : Window, IComponentConnector
 	{
 		if (CheckUpdateFromSettings)
 		{
-			new Icon(Application.GetResourceStream(MainIcon).Stream);
 			new BitmapImage(MainIcon);
 			string title = "DualSenseX";
 			string message = "Checking For Updates...";
